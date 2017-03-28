@@ -1,5 +1,6 @@
 package kmccann.rgross.io.uandmeme;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -20,8 +21,6 @@ public class MainActivity extends AppCompatActivity {
     private Button createAccountButton;
 
 
-
-
     void createUser(String email, String password) {
         mAuth.createUserWithEmailAndPassword(email, password);
     }
@@ -32,6 +31,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         createAccountButton = (Button) findViewById(R.id.createAccount);
+        Button goToMemesButton = (Button) findViewById(R.id.goToMemes);
         account = (EditText) findViewById(R.id.email);
         password = (EditText) findViewById(R.id.password);
         createAccountButton.setOnClickListener(new View.OnClickListener() {
@@ -42,6 +42,13 @@ public class MainActivity extends AppCompatActivity {
                 createUser(email, password);
             }
         });
+        goToMemesButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, MemeCards.class));
+            }
+        });
+
 
     }
 }
