@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "1012857186744",
+    "firebase_url": "https://uandmeme-57321.firebaseio.com",
+    "project_id": "uandmeme-57321",
+    "storage_bucket": "uandmeme-57321.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1012857186744:android:0de4024a9c76d347",
+        "android_client_info": {
+          "package_name": "kmccann.rgross.io.uandmeme"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1012857186744-f16596b0hr94qb8ek042sq97eg4htd07.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyACItSpOx6fXueE9_q9aGTJiEQzwmsyrs0"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
